@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>GROUP MAIL</title>
+    <script src="/statics/script.js" defer></script>
+</head>
+
+<body style="background-color: #024031">
+    <p style="color:#db7100">{{.Username}}</p>
+    <div align="center">
+        <p id="response"></p>
+        <input type="text" placeholder="From" required/><br/>
+        <input type="text" placeholder="Subject" /><br/>
+        <p></p>
+        <textarea id="emails" rows="30" cols="30" placeholder="To(one email address on each line)" required></textarea>
+        <textarea id="text" rows="30" cols="75" placeholder="Text"></textarea><br/><br/>
+        <button id='submit'>Send</button>
+        <input type="checkbox" onchange="changeDir(this)">RTL</input>
+    </div>
+</body>
+
+</html>
